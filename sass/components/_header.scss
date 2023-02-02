@@ -2,6 +2,12 @@
   padding: 21px 0 21px;
   border-bottom: 1px solid #ececec;
 
+  @media (min-width: 1200px) {
+    min-width: 1200px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
   &__container {
     display: flex;
     align-items: center;
@@ -15,15 +21,15 @@
 
     @media (min-width: 1200px) {
       min-width: 1200px;
+      height: 80px;
       gap: 93px;
-      margin-left: 200px;
-      padding: 0 0 0;
     }
   }
 
   &__menu {
     display: none;
-    flex-direction: row;
+    flex-direction: wrap;
+    justify-content: center;
     list-style: none;
     padding: 0;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -35,6 +41,7 @@
     }
 
     @media (min-width: 1200px) {
+      display: flex;
       gap: 46px;
     }
   }
@@ -48,6 +55,10 @@
     color: $primaryColor;
     text-decoration: none;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media (min-width: 1200px) {
+      font-size: 16px;
+    }
   }
 
   &__menu-link:hover::after,
@@ -95,12 +106,12 @@
       display: flex;
       flex-direction: column;
       gap: 10px;
-      paddin-top: 21px;
     }
     @media (min-width: 1200px) {
       display: flex;
       flex-direction: row;
       gap: 30px;
+      margin-left: 207px;
     }
   }
 
@@ -115,7 +126,7 @@
     transition: $transitionDurationDefault $transitionsFunctionDefault;
 
     @media (min-width: 1200px) {
-      font-size: 14px;
+      font-size: 16px;
     }
   }
 
