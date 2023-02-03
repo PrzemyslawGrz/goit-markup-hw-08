@@ -33,13 +33,18 @@ textarea {
 
 .modal {
   position: relative;
-  width: 528px;
-  min-height: 581px;
+  max-width: 450px;
+  max-height: 609px;
   padding: 40px;
   background-color: $secondaryColorWhite;
   transform: translateY(0);
   border-radius: 4px;
   transition: transform $transitionDurationDefault $transitionsFunctionDefault;
+
+  @media (min-width: 1200px) {
+    min-width: 528px;
+    min-height: 581px;
+  }
 
   &__button-close {
     position: absolute;
@@ -67,8 +72,12 @@ textarea {
     color: $secondaryColorGrey;
     font-size: 12px;
     margin-bottom: 28px;
-    width: 448px;
+    width: 370px;
     height: 40px;
+
+    @media (min-width: 1200px) {
+      width: 448px;
+    }
   }
 
   &__form-icon {
@@ -124,14 +133,19 @@ textarea {
     color: $secondaryColorGrey;
     text-align: start;
   }
+
   &__field-form {
-    width: 448px;
+    width: 370px;
     height: 120px;
     border: solid 1px;
     border-radius: 4px;
     border-color: rgba(33, 33, 33, 0.2);
     transition: border-color $transitionDurationDefault
       $transitionsFunctionDefault;
+
+    @media (min-width: 1200px) {
+      width: 448px;
+    }
   }
 
   &__form-label:focus-within &__form-icon {
@@ -146,10 +160,14 @@ textarea {
     gap: 7px;
     position: relative;
     cursor: pointer;
-    margin-left: 14px;
+
     margin-bottom: 30px;
     align-items: center;
     text-align: center;
+
+    @media (min-width: 1200px) {
+      margin-left: 14px;
+    }
   }
   &__checkbox-oryginal {
     position: absolute;
@@ -171,13 +189,18 @@ textarea {
   }
 
   &__text {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 14px;
     letter-spacing: 0.03em;
     color: $secondaryColorGrey;
     justify-content: center;
     align-items: center;
+
+    @media (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 24px;
+    }
   }
 
   &__text-accept {
@@ -197,7 +220,11 @@ textarea {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     transition: $transitionDurationDefault $transitionsFunctionDefault;
     position: relative;
-    margin-left: 124px;
+    margin-left: 85px;
+
+    @media (min-width: 1200px) {
+      margin-left: 125px;
+    }
   }
 
   &__button-submit:hover,
