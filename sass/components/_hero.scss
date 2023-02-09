@@ -21,10 +21,12 @@
 
     @media (min-width: 768px) {
       background-image: url(../images/overly-tb1.jpg);
+      height: 400px;
     }
 
     @media (min-width: 1200px) {
       background-image: url(../images/overly-dc1.jpg);
+      height: 600px;
     }
   }
 
